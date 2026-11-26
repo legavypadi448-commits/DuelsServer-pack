@@ -87,7 +87,7 @@ d.line([(0, 17), (W - 1, 17)], fill=(16, 11, 7))
 # --- slot grid: 9 x 6 at (8, 18) pitch 18 ---
 for r in range(6):
     for c in range(9):
-        slot(8 + 18 * c, 18 + 18 * r)
+        slot(7 + 18 * c, 17 + 18 * r)
 
 # --- carved divider band (124..139) ---
 d.rectangle([0, 124, W - 1, 139], fill=WOOD_D)
@@ -110,9 +110,9 @@ d.rectangle([0, 136, W - 1, 139], fill=WOOD_D)
 # --- player inventory: 9 x 3 at (8, 140), hotbar at (8, 194) ---
 for r in range(3):
     for c in range(9):
-        slot(8 + 18 * c, 140 + 18 * r)
+        slot(7 + 18 * c, 139 + 18 * r)
 for c in range(9):
-    slot(8 + 18 * c, 194)
+    slot(7 + 18 * c, 193)
 
 # --- bottom frame ---
 d.rectangle([0, 212, W - 1, 221], fill=IRON_D)
